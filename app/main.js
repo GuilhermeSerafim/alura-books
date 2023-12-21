@@ -1,3 +1,4 @@
+let livrosAPI = []
 // Responsável pela requisição da api
 const endpointAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 getBuscarLivrosDaAPI();
