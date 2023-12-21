@@ -10,7 +10,7 @@ function exibirLivros(livrosAPI) {
                 ${livroAPI.titulo}
             </h2>
             <p class="livro__descricao">${livroAPI.autor}</p>
-            <p class="livro__preco" id="preco">${livroAPI.preco}</p>
+            <p class="livro__preco" id="preco">${livroAPI.preco.toFixed(2)}</p>
             <div class="tags">
                 <span class="tag">${livroAPI.categoria}</span>
             </div>
