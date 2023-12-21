@@ -5,6 +5,6 @@ getBuscarLivrosDaAPI();
 async function getBuscarLivrosDaAPI() {
     const res = await fetch(endpointAPI);
     livrosAPI = await res.json();
-    console.table(livrosAPI);
-    exibirLivros(livrosAPI)
+    let livrosComDesconto = aplicarDesconto(livrosAPI);
+    exibirLivros(livrosAPI);
 }
