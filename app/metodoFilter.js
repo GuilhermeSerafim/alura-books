@@ -5,5 +5,5 @@ botoes.forEach((botao) => {
 
 function filtrarLivros(categoria) {
     let livrosFiltrados = livrosAPI.filter(livro => livro.categoria == categoria);
-    console.table(livrosFiltrados)
+    exibirLivros(livrosFiltrados);
 }
