@@ -1,4 +1,4 @@
-let livrosAPI = []
+let livrosAPI = []; // Declaramos em um escopo global para usarmos em outros arquivos
 // Responsável pela requisição da api
 const endpointAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 getBuscarLivrosDaAPI();
