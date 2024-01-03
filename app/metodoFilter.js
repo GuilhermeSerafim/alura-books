@@ -8,7 +8,8 @@ function filtrarLivros(categoria) {
         : livrosAPI.filter(livro => livro.categoria == categoria);
     exibirLivros(livrosFiltrados);
     if (categoria == 'disponivel') {
-        exibirTotalDosLivrosDisponiveis();
+        const valorTotal = calcularTotalDosLivrosDisponiveis(livrosFiltrados);
+        exibirTotalDosLivrosDisponiveis(valorTotal);
     }
 }
 
@@ -16,9 +17,9 @@ function filtrarPorDisponibilidade() {
     return livrosAPI.filter((livroAPI) => livroAPI.quantidade > 0);
 }
 
-function exibirTotalDosLivrosDisponiveis() {
+function exibirTotalDosLivrosDisponiveis(valorTotal) {
     valorTotalLivrosDisponiveis.innerHTML = `
      <div class="livros__disponiveis">
-      <p>Todos os livros disponíveis por R$ <span id="valor">299,00</span></p>
+      <p>Todos os livros disponíveis por R$ <span id="valor">${valorTotal}</span></p>
     </div>`
 }
