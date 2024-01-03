@@ -1,6 +1,8 @@
 const livrosDOM = document.getElementById('livros');
+const valorTotalLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis');
 
 function exibirLivros(livrosAPI) {
+    valorTotalLivrosDisponiveis.innerHTML = '';
     // Toda vez que essa função for chamada, os livrosDOM vão ser limpados, e ira exibir livrosDOM de acordo com o botão selecionado
     livrosDOM.innerHTML = "";
     // Percorrendo livros na api e exibindo na pagina
