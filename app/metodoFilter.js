@@ -4,6 +4,7 @@ botoes.forEach((botao) => {
 })
 
 function filtrarLivros(categoria) {
-    let livrosFiltrados = livrosAPI.filter(livro => livro.categoria == categoria);
+    let livrosFiltrados = categoria == 'disponivel' ? livrosAPI.filter((livroAPI) => livroAPI.quantidade > 0) //Exibindo apenas livros disponiveis
+        : livrosAPI.filter(livro => livro.categoria == categoria);
     exibirLivros(livrosFiltrados);
 }

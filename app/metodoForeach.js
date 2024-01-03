@@ -5,7 +5,7 @@ function exibirLivros(livrosAPI) {
     livrosDOM.innerHTML = "";
     // Percorrendo livros na api e exibindo na pagina
     livrosAPI.forEach(livroAPI => {
-        // Verificando disponibilidade
+        // Verificando disponibilidade com operador ternario
         let disponibilidade = livroAPI.quantidade > 0 ? 'livro__imagens' : 'livro__imagens indisponivel';
         livrosDOM.innerHTML += `
         <div class="livro">
