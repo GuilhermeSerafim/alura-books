@@ -5,9 +5,11 @@ function exibirLivros(livrosAPI) {
     livrosDOM.innerHTML = "";
     // Percorrendo livros na api e exibindo na pagina
     livrosAPI.forEach(livroAPI => {
+        // Verificando disponibilidade
+        let disponibilidade = livroAPI.quantidade > 0 ? 'livro__imagens' : 'livro__imagens indisponivel';
         livrosDOM.innerHTML += `
         <div class="livro">
-            <img class="livro__imagens" src="${livroAPI.imagem}" alt="${livroAPI.alt}" />
+            <img class="${disponibilidade}" src="${livroAPI.imagem}" alt="${livroAPI.alt}" />
             <h2 class="livro__titulo">
                 ${livroAPI.titulo}
             </h2>

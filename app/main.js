@@ -9,14 +9,3 @@ async function getBuscarLivrosDaAPI() {
     let livrosComDescontoAplicado = aplicarDesconto(livrosAPI);
     exibirLivros(livrosComDescontoAplicado);
 }
-
-// var x = [1, 3, 2];
-// x.sort((a, b) => {
-//     console.log(a)
-//     console.log(b)
-//     console.log("---")
-//     return a - b;
-//     //return b - a; ordem
-// })
-
-// console.log("Ordenação crescente: " + x);
