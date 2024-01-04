@@ -9,3 +9,8 @@
 - Manipular valores criando novas listas com map
 - Aplicar ordenação e filtros em projetos JavaScript
 - Manipular o DOM com base nos métodos de array
+
+## 📚 Desperte o leitor dentro de você! 📖
+![](https://muybridgeneto.files.wordpress.com/2013/10/airan_kang-not_art-jkscatena.gif)
+
+**[Acesse o Projeto AluraBooks📘](https://vercel.com/guilhermeserafim/alura-livros/FcGNQNy1WYitFdcDPqRuhDrrrsG5)**
