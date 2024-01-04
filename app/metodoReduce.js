@@ -1,4 +1,4 @@
-function calcularTotalDosLivrosDisponiveis(livros) {
-    // Acumulador + Valor Atual + Valor Inicial
-    return livros.reduce((acc, livro) => acc + livro.preco, 0).toFixed(2); 
+function calcularTotalDosLivrosDisponiveis(livrosDisponiveis) {
+    // Acumulador + Valor Atual, Valor Inicial
+    return livrosDisponiveis.reduce((acc, livroDisponivel) => acc + livroDisponivel.preco, 0).toFixed(2); 
 }
