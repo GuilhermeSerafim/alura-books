@@ -13,4 +13,8 @@
 ## 📚 Desperte o leitor dentro de você! 📖
 ![](https://muybridgeneto.files.wordpress.com/2013/10/airan_kang-not_art-jkscatena.gif)
 
-**[Acesse o Projeto AluraBooks📘](https://vercel.com/guilhermeserafim/alura-livros/FcGNQNy1WYitFdcDPqRuhDrrrsG5)**
+**[Registro de implantação no painel Vercel](https://vercel.com/guilhermeserafim/alura-livros/FcGNQNy1WYitFdcDPqRuhDrrrsG5)**
+
+## Estrutura e limites
+
+A página `index.html` carrega os scripts de `app/`. Em `app/main.js`, o catálogo é obtido por `fetch` de um JSON externo e encaminhado para desconto e exibição. O exercício depende da disponibilidade dessa fonte externa. O repositório não contém manifesto de pacotes.
